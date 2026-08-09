@@ -1,3 +1,5 @@
+
+
 # minivmi
 ![Language](https://img.shields.io/badge/language-C-00599C.svg) ![Platform](https://img.shields.io/badge/platform-Xen%20Project-orange.svg) ![Size](https://img.shields.io/badge/size-minimal-success) ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
@@ -45,6 +47,7 @@ make
 ```bash
 sudo _build/bin/list_domains
 ```
+> 提示：运行此命令可获取各 guest 的 `uuid`，请复制目标 guest 的 uuid 用于下一步。
 
 2) 监控某个 guest 的 CR3 写入（推荐用 UUID）：
 
@@ -53,4 +56,3 @@ sudo _build/bin/cr3trace_uuid --uuid <guest-uuid>
 ```
 
 按 `Ctrl+C` 退出。
-
